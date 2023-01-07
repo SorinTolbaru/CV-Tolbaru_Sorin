@@ -1,0 +1,307 @@
+body,html{
+    margin: 0;
+    background-color: grey;
+
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 500;
+
+}
+
+
+.about,.skills,.projects{
+    color: black;
+    font-size: 20px;
+    height: 100vh
+}
+.about{
+    background-color: rgb(90, 90, 90);
+}
+.skills{
+    color:white;
+    background-color: rgb(90, 90, 90);
+
+
+
+}
+
+
+.menu-container{
+    display: flex;
+    position: absolute;
+    width: 98vw;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: text;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    line-height: 60px;
+    width: 80px;
+    height: 180px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow:5px 5px 10px black;
+}
+
+.about-jump,.skills-jump,.projects-jump{
+    width: 80px;
+    height: 60px;
+    
+
+
+}
+.about-jump:hover, .skills-jump:hover, .projects-jump:hover{
+font-size: 18px;
+text-decoration: underline;
+}
+
+.about-jump,.skills-jump{
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.container-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    border: 1px solid black;
+}
+
+.photo{
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url(./source/face.jpeg);
+    background-size: 250px 260px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px black;
+}
+
+.biography{
+    font-size: 22px;
+    margin: 20px;
+    padding: 10px;
+    width: 60vw;
+    height: 300px;
+    color: white;
+    
+}
+
+.contact{
+    width: 100;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.container-contact{
+    display: flex;
+    justify-content: space-around;
+    user-select: text;
+    align-items: center;
+    width: 80vw;
+    height: 10vh;
+}
+
+
+
+.college,.certification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+}
+
+
+
+
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: content-box;
+
+
+}
+h3{
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+
+}
+
+
+.projects{
+    background-color: grey;
+    font-size: 15px;
+
+}
+.myprojects1,.myprojects2{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.todo,.calculator,.timer,.memory,.hang,.braxter{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    box-shadow: 0px 0px 10px black;
+
+    
+}
+
+.plogo{
+    height: 180px;
+    background-color: black;
+    
+}
+
+.content{
+    color: white;
+    height: 120px;
+    background-color: rgb(90, 90, 90);
+}
+
+.plogo-calculator{
+    background-image: url(source/calculator.JPG);
+    background-position: center;
+    background-size: 190px 180px;
+    background-repeat: no-repeat;
+}
+
+.plogo-timer{
+    background-image: url(source/timer.JPG);
+    background-position: center;
+    background-size: 200px 180px;
+    background-repeat: no-repeat;
+}
+
+.plogo-todo{
+    background-image: url(source/todo.JPG);
+    background-position: center;
+    background-size: 120px 180px;
+    background-repeat: no-repeat;
+}
+
+.plogo-hang{
+    background-image: url(source/hang.JPG);
+    background-position: center;
+    background-size: 240px 160px;
+    background-repeat: no-repeat;
+}
+
+.plogo-memory{
+    background-image: url(source/memory.JPG);
+    background-position: center;
+    background-size: 200px 160px;
+    background-repeat: no-repeat;
+}
+
+.plogo-braxter  {
+    background-image: url(source/construction.png);
+    background-position: center;
+    background-size: 280px 160px;
+    background-repeat: no-repeat;
+}
+
+.myskills{
+    box-sizing: content-box;
+    width: 100;
+    height: 65vh;
+ 
+}
+
+.myskills1,.myskills2{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+
+}
+
+
+.education{
+    justify-content: center;
+    height: 20vh;
+    font-size: 20px;
+}
+
+.html,.css,.sass,.javascript,.bootstrap,.react,.gits,.githubs{
+    box-sizing: content-box;
+    width: 150px;
+    line-height: 150px;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.number,.github,.email,.linkedin{
+    margin: 3px;
+    user-select: text;
+}
+
+
+@media (max-width: 680px) {
+    .html,.css,.sass,.javascript,.bootstrap,.react,.gits,.githubs{
+        font-size: 0px;
+        margin: 5px;
+    }
+    .education{
+        justify-content: center;
+        height: 20vh;
+        font-size: 18px;
+    }
+
+  }
+
+  @media (max-width: 870px) {
+    .biography{
+        font-size: 15px;
+        padding: 10px;
+        width: 70vw;
+    }
+    .container-about{
+        display: block;
+
+    }
+    .education{
+        font-size: 15px;
+    }
+
+  }
+
+  @media (max-width: 1070px) {
+
+    .container-contact{
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container-contact{
+        font-size: 10px;
+    }
+  }
+
